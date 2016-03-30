@@ -52,6 +52,8 @@ galera-lb:
   - 3306:3307/tcp
   tty: true
   image: rancher/load-balancer-service
+  labels:
+    io.rancher.scheduler.global: 'true'
   links:
   - galera:galera
   stdin_open: true
