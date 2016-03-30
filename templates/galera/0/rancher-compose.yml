@@ -25,7 +25,6 @@
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
 galera:
-  scale: 3
   metadata:
     mysqld: |
       innodb_file_per_table = 1
@@ -41,7 +40,6 @@ galera:
       wsrep_sst_auth=root:${mysql_root_password}
       progress=1
 galera-lb:
-  scale: 1
   load_balancer_config: {}
   health_check:
     port: 42
