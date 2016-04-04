@@ -13,7 +13,6 @@
       required: true
       default: "git.example.com"
       type: "string"
-  questions:
     - variable: "gitlab_version"
       description: "Gitlab version"
       label: "Version:"
