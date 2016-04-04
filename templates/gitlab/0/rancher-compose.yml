@@ -1,6 +1,6 @@
 .catalog:
   name: Gitlab Community
-  version: 8.5.1-0
+  version: 8.5.1-1
   description: |
     Gitlab CE is a free GitHub alternative
   minimum_rancher_version: v0.56.0
@@ -12,6 +12,13 @@
       label: "Hostname:"
       required: true
       default: "git.example.com"
+      type: "string"
+  questions:
+    - variable: "gitlab_version"
+      description: "Gitlab version"
+      label: "Version:"
+      required: true
+      default: "8.5.1-ce.0"
       type: "string"
 
 gitlab-server:
